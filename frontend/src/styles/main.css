@@ -1,0 +1,108 @@
+:root {
+  --bg: #1d1b18;
+  --panel: #2a2622;
+  --panel-light: #37322c;
+  --border: #4a4338;
+  --text: #ece4d6;
+  --text-dim: #b6ab97;
+  --accent: #c8893f;
+  --accent-hover: #daa05a;
+  --danger: #e8504a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button {
+  font-family: inherit;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--panel-light);
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn:hover {
+  background: #464038;
+}
+
+.btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1d1b18;
+  font-weight: 600;
+}
+
+.btn.primary:hover {
+  background: var(--accent-hover);
+}
+
+.btn.danger {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1d1b18;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #1f1c19;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text-dim);
+  font-size: 13px;
+}
+
+.annotation-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.cursor-label {
+  fill: #9fd0ff;
+  font-size: 12px;
+}
+
+.openseadragon-container :focus {
+  outline: none;
+}
