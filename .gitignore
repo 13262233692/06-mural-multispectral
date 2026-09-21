@@ -1,0 +1,7 @@
+.venv/
+node_modules/
+dist/
+storage/
+.npm-cache/
+__pycache__/
+*.pyc
